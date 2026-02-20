@@ -1,0 +1,54 @@
+Tips and Tricks Cheat Sheet - courtesy of your local MathWorkers
+
+Shortcuts:
+Ctrl + R — Comment selection
+Ctrl + T — Uncomment selection
+Ctrl + I — Auto-indent selected lines
+Command History Navigation: Up Arrow — Cycle through previous commands
+Tab Completion: Auto-complete functions, variables, and file names
+Code Refactoring
+Automatically convert selected code into a function with one click
+Block Editing: Alt + Drag — Select a rectangular region of text and edit multiple lines simultaneously
+Code Suggestions: Inline hints for arguments, property values, and alternate syntaxes
+Use MATLAB Copilot to create comments on your code
+ 
+Efficiency Tips in the Live Editor
+Divide code into sections to execute independently
+View output inline next to the code that generated it
+Add formatted text, hyperlinks, images, equations
+Use embedded plot animations with playback controls
+Export directly to PDF, HTML, Word, LaTeX
+Interactive Import Tool:
+Auto-detects datatypes
+Lets you choose missing-data handling
+Generates reusable import code (detectImportOptions)
+Useful Datatypes:
+Tables – mixed-type tabular data
+Categorical arrays – memory-efficient discrete labels
+Strings – easier & faster text handling
+Datetime / Duration / calendarDuration
+Timetables — time-indexed data, retiming, synchronization
+Dictionaries — O(1) lookups, modern replacement for containers.Map
+ 
+MATLAB Projects:
+Automate startup & shutdown scripts
+Automatically manage MATLAB path
+Enforce strict project boundaries to prevent shadowing
+Use dependency/impact analysis tools
+Tag files with labels for organization
+Reuse code through referenced projects
+ 
+App Designer:
+CTRL+Left Mouse click and drag uicomponent to duplicate
+CTRL+Left Mouse click UI component from Component Library to canvas to create UI component without a label
+In code view, drag UI component from Component Browser to code, so you don’t need to type out the component.
+Right click UI component to convert to another without removing callbacks (e.g. numeric editfield to text editfield)
+You don’t need to rerun app if you just edit an existing function
+To make a uipanel appear and disappear within an app, place it on a uigridlayout and programmatically make the size of that particular column/row zero (or 20 pixels if you want to keep the title of uipanel visible) with a callback function.
+Place all your components on the canvas (UIFigure) before adding a uigridlayout and the columns/rows will automatically populate.
+Optimizing Code:
+Use MATLAB Profiler to find bottlenecks
+Preallocate variables
+Use parallel computing toolbox (e.g. parfor instead of for loops)
+Vectorize
+Use MATLAB Copilot
